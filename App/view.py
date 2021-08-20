@@ -64,8 +64,7 @@ def loadBookTags():
     """
     Cargar los Tags de libros
     """
-    # TODO: Modificación de Est-1 en el Lab 2
-    pass
+    return controller.loadBooks('GoodReads/book_tags-small.csv') 
 
 
 """
@@ -78,11 +77,7 @@ while True:
         print("Cargando información de libros....")
         books = loadBooks()
         print('Total de libros cargados: ' + str(lt.size(books)))
-
-        # TODO: Modificación de Est-1 en el Lab 2
-
-
-        # TODO: Modificación de Est-2 en el Lab 2
+        print('Primer libro cargado: ' + str(lt.firstElement(books)))
 
     elif int(inputs[0]) == 2:
         print("Cargando información de tags....")
